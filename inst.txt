@@ -1,0 +1,24 @@
+1 - Crie um espaço para o projeto no computador
+	mkdir pnews
+	cd pnews
+
+	#Inicializar o git
+	git init
+
+2 - Adicionar um repositório git no PC
+	git remote add pnewshttps://github.com/Rallristhy/nodejs.git
+
+3 - Baixar repositório no PC:
+	git pull pnews master
+
+4 - Enviar modificações para o repositório:
+	git add .
+	
+	#Verificar o que será enviado
+	git status
+	
+	#Commit
+	git commit -m "Mensagem referente ao que foi modificado"
+	
+	#Submeter
+	git push pnews master
