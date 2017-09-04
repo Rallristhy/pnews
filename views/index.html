@@ -6,11 +6,22 @@
 	<meta charset="utf-8">
 	<title>Fundamentos Angular</title>
 	
-	<!-- Importando angular -->
-	<script type="text/javascript" src="../node_modules/angular/angular.min.js"></script>
+	<script type="text/javascript" src="/node_modules/angular/angular.min.js"></script>
+	<script type="text/javascript" src="/core/core.js"></script>
 
 </head>
 <body>
-	Oi
+	<div ng-controller="Controller1 as ctr1">
+
+		<!-- value do scopo -->
+		<h1>{{ctr1.value}}</h1>
+
+		<!-- Criado um listener que atualizará a variável value -->
+		<input ng-model="ctr1.value"/>
+
+		<!-- chamando a função inc() do scopo -->
+		<button ng-click="ctr1.inc()">Inc</button>
+
+	</div>
 </body>
 </html>
