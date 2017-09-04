@@ -22,3 +22,5 @@
 	
 	#Submeter
 	git push pnews master
+
+gal
